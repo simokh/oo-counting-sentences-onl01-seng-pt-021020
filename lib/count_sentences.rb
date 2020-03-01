@@ -32,7 +32,6 @@ class String
     else
     new_array = self.reject{|string| string.empty?}
     return new_array.size
-  else
     end
 
   end
