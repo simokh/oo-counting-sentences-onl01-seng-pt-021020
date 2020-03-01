@@ -32,6 +32,8 @@ class String
     else
     new_array = self.reject{|string| string.empty?}
     return new_array.size
+  else new_array = self.count_sentences
+    return new_array
     end
 
   end
