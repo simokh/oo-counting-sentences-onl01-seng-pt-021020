@@ -29,7 +29,7 @@ class String
   def count_sentences
     if new_array = self.split(/[.?!]/)
       return new_array.size
-    else
+    elseif
     new_array = self.reject{|string| string.empty?}
     return new_array.size
   else new_array = self.count_sentences
