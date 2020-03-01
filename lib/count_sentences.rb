@@ -33,8 +33,8 @@ class String
     count_sentences = self.reject{|string| string.empty?}
     return count_sentences.size
   elsif count_sentences = self.split(/[.?!]/)
-    return count_sentences.count
-  else 
+    return count_sentences.length 
+  else
     end
   end
 end
