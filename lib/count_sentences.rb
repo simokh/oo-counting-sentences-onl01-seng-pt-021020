@@ -27,7 +27,7 @@ class String
   end
 
   def count_sentences
-    count_sentences = self.split(/[.?!]/)
+    if count_sentences = self.split(/[.?!]/)
       # return count_sentences.size
     # elsif
     ||
@@ -36,7 +36,8 @@ class String
     ||
     count_sentences = self.split(/[.?!]/)
     return count_sentences.count
-  
+  else 
+
     end
   end
 end
