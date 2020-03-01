@@ -27,17 +27,13 @@ class String
   end
 
   def count_sentences
-    if count_sentences = self.split(/[.?!]/)
-      # return count_sentences.size
-    # elsif
-    ||
-    count_sentences = self.reject{|string| string.empty?}
-    # return count_sentences.size
-    ||
-    count_sentences = self.split(/[.?!]/)
+    count_sentences = self.split(/[.?!]/).reject{|string| string.empty?}
     return count_sentences.count
-  else 
-
-    end
+  #   ||
+  #   count_sentences = self.reject{|string| string.empty?}
+  #
+  #   count_sentences = self.split(/[.?!]/)
+  #   return count_sentences.count
+  # else 
   end
 end
