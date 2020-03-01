@@ -27,6 +27,7 @@ class String
   end
 
   def count_sentences
+    # before.reject works on the first and the third test. 
     count_sentences = self.split(/[.?!]/).reject{|string| string.empty?}
     return count_sentences.count
 
@@ -34,6 +35,6 @@ class String
       # test
   #   count_sentences = self.split(/[.?!]/)
   #   count_sentences = self.reject{|string| string.empty?}
-  
+
   end
 end
