@@ -29,11 +29,11 @@ class String
   def count_sentences
     count_sentences = self.split(/[.?!]/).reject{|string| string.empty?}
     return count_sentences.count
-  #   ||
-  #   count_sentences = self.reject{|string| string.empty?}
-  #
+
+      # tried to use the if stat, but I could not pass the third
+      # test
   #   count_sentences = self.split(/[.?!]/)
-  #   return count_sentences.count
-  # else 
+  #   count_sentences = self.reject{|string| string.empty?}
+  
   end
 end
