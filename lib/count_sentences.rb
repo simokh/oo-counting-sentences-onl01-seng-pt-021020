@@ -32,7 +32,7 @@ class String
     elsif
     new_array = self.reject{|string| string.empty?}
     return new_array.size
-  else new_array = self.count_sentences
+  else new_array = self.count
     return new_array
     end
   end
