@@ -33,7 +33,6 @@ class String
     new_array = self.reject{|string| string.empty?}
     return new_array.size
   else
-  binding.pry
     end
 
   end
