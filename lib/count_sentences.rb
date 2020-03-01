@@ -28,12 +28,12 @@ class String
 
   def count_sentences
     # new_array = []
-    if new_array.split(".?!")
+    if new_array.split([".?!"])
       return new_array.size
     else
     new_array.reject{|string| string.empty?}
     return new_array.size
-    end 
+    end
     binding.pry
   end
 end
