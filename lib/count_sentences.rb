@@ -28,7 +28,7 @@ class String
 
   def count_sentences
     new_array = []
-    count_sentences.split[".?!"].reject{|string| string.empty?} << new_array
+    count_sentences.split(/[^[[:word:]]]+/).reject{|string| string.empty?} << new_array
     return new_array.size
   end
 end
